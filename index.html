@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoekLucas Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Page Content -->
+  <main class="hero">
+    <div class="hero-inner">
+      <span class="label">Portfolio</span>
+      <h1>Loek<br /><em>Lucas</em></h1>
+      <p class="tagline">Design &amp; Development</p>
+      <div class="dot-grid" aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="true" aria-label="Cookie consent">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p class="cookie-banner__title">This site uses cookies</p>
+        <p class="cookie-banner__body">
+          We use essential and functionality cookies to keep things running smoothly.
+          No sensitive data, no ad tracking.
+          <button class="cookie-banner__link" id="openModal">Read the full policy.</button>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--outline" id="declineBtn">Decline</button>
+        <button class="btn btn--primary" id="acceptBtn">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Policy Modal -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="document">
+      <div class="modal__header">
+        <span class="modal__label">Legal</span>
+        <h2 class="modal__title">Cookies Policy</h2>
+        <p class="modal__date">Last updated: March 30, 2026</p>
+        <button class="modal__close" id="closeModal" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal__body">
+        <p>This Cookies Policy explains what Cookies are and how We use them. You should read this policy so You can understand what type of cookies We use, or the information We collect using Cookies and how that information is used.</p>
+        <p>Cookies do not typically contain any information that personally identifies a user, but personal information that We store about You may be linked to the information stored in and obtained from Cookies.</p>
+        <p>We do not store sensitive personal information, such as mailing addresses, account passwords, etc. in the Cookies We use.</p>
+
+        <h3>Interpretation and Definitions</h3>
+        <p>The words whose initial letters are capitalized have meanings defined under the following conditions.</p>
+        <ul>
+          <li><strong>Company</strong> refers to LoekLucas Portfolio.</li>
+          <li><strong>Cookies</strong> means small files placed on Your device by a website, containing details of your browsing history.</li>
+          <li><strong>Website</strong> refers to LoekLucas Portfolio.</li>
+          <li><strong>You</strong> means the individual accessing or using the Website.</li>
+        </ul>
+
+        <h3>Type of Cookies We Use</h3>
+        <p>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your device when You go offline, while Session Cookies are deleted when You close your browser.</p>
+
+        <div class="cookie-type">
+          <p class="cookie-type__name">Necessary / Essential Cookies</p>
+          <p class="cookie-type__meta">Type: Session Cookies &nbsp;&middot;&nbsp; Administered by: Us</p>
+          <p>These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts.</p>
+        </div>
+
+        <div class="cookie-type">
+          <p class="cookie-type__name">Functionality Cookies</p>
+          <p class="cookie-type__meta">Type: Persistent Cookies &nbsp;&middot;&nbsp; Administered by: Us</p>
+          <p>These Cookies allow Us to remember choices You make when You use the Website, such as remembering your login details or language preference.</p>
+        </div>
+
+        <h3>Your Choices Regarding Cookies</h3>
+        <p>If You prefer to avoid the use of Cookies on the Website, first You must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with the Website.</p>
+        <p>If You do not accept Our Cookies, You may experience some inconvenience and some features may not function properly.</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have any questions about this Cookies Policy, contact us by email: <a href="mailto:loek.van.kessel@sintlucasedu.nl">loek.van.kessel@sintlucasedu.nl</a></p>
+      </div>
+      <div class="modal__footer">
+        <button class="btn btn--outline" id="declineBtnModal">Decline</button>
+        <button class="btn btn--primary" id="acceptBtnModal">Accept &amp; Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="cookies.js"></script>
+</body>
+</html>
